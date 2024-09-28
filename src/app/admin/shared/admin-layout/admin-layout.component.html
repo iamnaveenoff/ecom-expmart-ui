@@ -1,0 +1,18 @@
+<div class="d-flex" id="wrapper">
+  <!-- Sidebar -->
+  <div class="bg-light border-right" id="sidebar-wrapper">
+    <div class="sidebar-heading">Admin naveen</div>
+    <div class="list-group list-group-flush">
+      <a routerLink="overview" class="list-group-item list-group-item-action bg-light">Overview</a>
+      <a routerLink="users" class="list-group-item list-group-item-action bg-light">Users</a>
+      <a routerLink="add-product" class="list-group-item list-group-item-action bg-light">Add Product</a>
+      <a routerLink="add-category" class="list-group-item list-group-item-action bg-light">Add Category</a>
+      <a routerLink="settings" class="list-group-item list-group-item-action bg-light">Settings</a>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper" class="container-fluid">
+    <router-outlet></router-outlet>
+  </div>
+</div>

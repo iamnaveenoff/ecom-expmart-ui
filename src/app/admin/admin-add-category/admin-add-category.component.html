@@ -1,0 +1,41 @@
+<div class="container">
+  <h2>Category Management</h2>
+
+  <!-- Category Form -->
+  <form [formGroup]="categoryForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Category Name</label>
+      <input type="text" id="name" class="form-control" formControlName="name" />
+    </div>
+
+    <div class="form-group">
+      <label for="image">Category Image</label>
+      <input type="file" id="image" class="form-control" (change)="onFileSelected($event)" />
+      <img *ngIf="categoryForm.get('image')?.value" [src]="categoryForm.get('image')?.value" alt="Category Image" style="width:100px; height:100px; margin-top:10px;" />
+    </div>
+
+   <!-- <button type="submit" class="btn btn-primary">{{ isEditMode ? 'Update' : 'Create' }}</button>
+    <button type="button" class="btn btn-secondary" (click)="resetForm()">Cancel</button>-->
+  </form>
+
+  <!-- Category List Table -->
+  <!--<table class="table mt-4">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Image</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let category of categories">
+      <td>{{ category.name }}</td>
+      <td><img [src]="category.image" alt="Category Image" style="width:50px; height:50px;" /></td>
+      <td>
+        <button class="btn btn-info" (click)="editCategory(category)">Edit</button>
+        <button class="btn btn-danger" (click)="deleteCategory(category.id)">Delete</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>-->
+</div>

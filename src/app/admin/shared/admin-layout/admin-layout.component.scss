@@ -1,0 +1,20 @@
+/* Make the wrapper take up the full height of the viewport */
+#wrapper {
+  display: flex;
+  min-height: 100vh; /* Full height */
+}
+
+/* Sidebar styling */
+#sidebar-wrapper {
+  width: 250px;
+  background-color: #f8f9fa; /* bg-light color */
+  border-right: 1px solid #ddd;
+  height: 100%; /* Full height for sidebar */
+}
+
+/* Page content area */
+#page-content-wrapper {
+  flex: 1;
+  padding: 20px;
+  /* Ensure the content fills the remaining space next to the sidebar */
+}

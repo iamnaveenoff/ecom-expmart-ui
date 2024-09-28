@@ -1,0 +1,24 @@
+#wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+#sidebar-wrapper {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+#page-content-wrapper {
+  flex: 1;
+  margin-left: 250px;
+  padding: 20px;
+}
+
+#menu-toggle {
+  margin-left: auto;
+}

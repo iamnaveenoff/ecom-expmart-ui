@@ -1,0 +1,41 @@
+<div class="card-wrapper">
+  <div class="card">
+    <!-- card left -->
+    <div class="product-imgs">
+      <div class="img-display">
+        <div class="img-showcase">
+          <img [src]="'data:image/jpeg;base64,' + product?.image" alt="{{ product?.productName }}">
+
+        </div>
+      </div>
+
+    </div>
+    <!-- card right -->
+    <div class="product-content">
+      <h2 class="product-title">{{ product?.productName }}</h2>
+
+
+      <div class="product-price">
+        <p class="new-price">Price: <span>₹ {{ product?.price }}</span></p>
+        <p class="old-price">Category: <span>{{ product?.categoryName }}</span></p>
+        <p class="new-price">contactNumber: <span><b> {{ product?.contactNumber }}</b></span></p>
+        <p class="new-price">Published By: <span><b> {{ product?.publishedBy }}</b></span></p>
+        <p class="new-price">Email: <span><b><a href="mailto:{{product?.email }}">{{ product?.email }}</a></b></span></p>
+      </div>
+
+      <div class="product-detail">
+        <h2>about this item: </h2>
+        <p>{{ product?.description }}</p>
+
+      </div>
+
+      <div class="purchase-info">
+        <button type="button" class="btn">
+          <a href="mailto:{{product?.email }}">Contact The Owner</a>
+        </button>
+      </div>
+
+
+    </div>
+  </div>
+</div>
